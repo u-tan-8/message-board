@@ -4,7 +4,7 @@
 
     <h1>id = {{ $message->id }} のメッセージ詳細ページ</h1>
 
-    <<table class="table table-bordered">
+    <table class="table table-bordered">
         <tr>
             <th>id</th>
             <td>{{ $message->id }}</td>
@@ -18,6 +18,7 @@
             <td>{{ $message->content }}</td>
         </tr>
     </table>
+
     
     {!! link_to_route('messages.edit', 'このメッセージを編集', ['id' => $message->id], ['class' => 'btn btn-light']) !!}
 
